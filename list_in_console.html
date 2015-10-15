@@ -1,0 +1,33 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>asdf</title>
+</head>
+<body>
+
+<canvas id="canvas" width="600" height="600"></canvas>
+
+	<script>
+		//init
+		// var x = [];
+		// x[0] = 0.4;
+		var x = 0.4;
+		var r = 3.5;
+
+		for(var i=0; i<100; i++)
+		{
+		  console.log("x= " + truncate(x));
+		  x = r*x*(1 - x); 
+		}
+
+		function truncate(x) {
+			var temp = x * 1000;
+			temp = Math.floor(temp) / 1000;
+			return temp;
+		}
+	</script>
+
+ This is  test
+
+</body>
+</html>
